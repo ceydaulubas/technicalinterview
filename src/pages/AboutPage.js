@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../assets/style/AboutPage.css";
+import "../assets/style/AboutPage.scss";
 import Me from "../assets/images/me.jpg"
 import Pic from "../assets/images/pic.jpg"
 import { Link } from "react-router-dom";
