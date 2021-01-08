@@ -9,9 +9,9 @@ import HalloweenSnake from "../assets/images/HalloweenSnake-screenshot.png"
 const projects = () => {
   return (
 
-    <div className="containerP" style={{ width: '75%', display:'block', marginLeft:'auto', marginRight:'auto',marginTop:'3%'}}>
-    <h1 style={{ textAlign:'center'}}>My Projects</h1>
-      <Card className="project1" style={{marginTop:'2%'}}>
+    <div className="containerP" style={{ width: '75%', display:'block', marginLeft:'auto', marginRight:'auto', marginBottom: "6%" }}>
+    <h1 style={{ textAlign:'center', marginBottom: '3%',marginTop:'3%'}}>My Projects</h1>
+      <Card className="project1" style={{marginTop:'3%'}}>
         <Card.Img variant="top" src={PetAdopt} style={{ width: '100%' , height: '100%' , borderRadius:"25px"}}  />
         <Card.Body>
           <Card.Title >PetAdopt</Card.Title>
@@ -43,7 +43,7 @@ const projects = () => {
         </Card.Footer>
       </Card>
 
-      <Card className="project2" style={{marginTop:'2%'}}>
+      <Card className="project2" style={{marginTop:'3%'}}>
         <Card.Img variant="top" src={CodeChat}  style={{ width: '100%' , height: '100%' , borderRadius:"25px"}}/>
         <Card.Body>
           <Card.Title>CodeChat</Card.Title>
@@ -75,7 +75,7 @@ const projects = () => {
         </Card.Footer>
       </Card>
 
-      <Card className="project3" style={{marginTop:'2%'}}>
+      <Card className="project3" style={{marginTop:'3%'}}>
         <Card.Img variant="top" src={HalloweenSnake} style={{ width: '100%' , height: '100%' , borderRadius:"25px"}} />
         <Card.Body>
           <Card.Title>HalloweenSnake</Card.Title>

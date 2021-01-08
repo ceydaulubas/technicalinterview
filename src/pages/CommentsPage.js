@@ -1,3 +1,4 @@
+// import axios from "axios";
 import React from "react";
 import "../assets/style/CommentsPage.scss";
 
@@ -8,7 +9,7 @@ class CommentBox extends React.Component {
       this.state = {
         showComments: false,
         comments: [
-          {id: 1, author: "cu", body: "This is my first comment on this forum"},
+          {id: 1, author: "Ceyda Ulubas", body: "This is my first comment on this page"},
         ]
       };
     }
@@ -24,8 +25,8 @@ class CommentBox extends React.Component {
       }
       
       return(
-        <div className="comment-box">
-          <h2>Write Your Comments</h2>
+        <div className="comment-box" style ={{   marginBottom: '5%' }}>
+          <h2  style={{ textAlign:'center'}}>Write Your Comments</h2>
           <CommentForm addComment={this._addComment.bind(this)}/>
           <button id="comment-reveal" onClick={this._handleClick.bind(this)}>
             {buttonText}
@@ -82,10 +83,10 @@ class CommentBox extends React.Component {
         <form className="comment-form" onSubmit={this._handleSubmit.bind(this)}>
           <div className="comment-form-fields">
             <input placeholder="Name" required ref={(input) => this._author = input}></input><br />
-            <textarea placeholder="Comment" rows="4" required ref={(textarea) => this._body = textarea}></textarea>
+            <textarea placeholder="Comment" rows="3" required ref={(textarea) => this._body = textarea}></textarea>
           </div>
           <div className="comment-form-actions">
-            <button type="submit">Post Comment</button>
+            <button type="submit">Send Comment</button>
           </div>
         </form>
       );
@@ -113,8 +114,17 @@ class CommentBox extends React.Component {
     }
     _deleteComment() {
       alert("Are you sure that you want to delete this comment?");
+      // axios
+      // .delete (`http://localhost:3000/comments/`)
+
+
+    // this.setState({
+    //   showComments: true,
+    //   comments: []
+    // })
     }
   }
+  
   
   
   

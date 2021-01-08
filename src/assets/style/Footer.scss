@@ -1,0 +1,35 @@
+.footer{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(235, 214, 214, 0.74);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .menu {
+    list-style: none; 
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    float:right;
+      li {
+        // padding: 10px 0;
+        display:inline-block;
+       
+        a {
+          color: #fff;
+          display: flexbox;
+          flex-direction: column;
+          padding: 20px 0 20px 20px;
+          img {
+            display: flexbox;
+            flex-direction: row;
+            width:30px;
+            padding:0;
+            margin:0;
+            }
+        }
+      }
+  }   

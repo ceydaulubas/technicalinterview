@@ -1,25 +1,31 @@
-// import React from 'react';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
+import React from "react";
+import "../assets/style/Footer.scss";
 
-// function Footer() {
+import GithubLogo from "../assets/images/githubwhite.png"
+import LinkedinLogo from "../assets/images/linkedin.png"
+import MailLogo from "../assets/images/mail.png"
+import MediumLogo from "../assets/images/medium-logo.png"
 
-//     return(
-//         <footer className="mt-5">
-//             <Container fluid={true}>
-//                 <Row className="border-top justify-content-between p-3">
-//                     <Col className="p-0" md={3} sm={12}>
-//                         Garrett Love
-//                     </Col>
-//                     <Col className="p-0 d-flex justify-content-end" md={3}>
-//                         This site was made by Garrett Love.
-//                     </Col>
-//                 </Row>
-//             </Container>
-//         </footer>
-//     );
+const Footer = () => (
+  <div className="footer">
+    <ul className="menu">
+              <li className="list">
+                <a href="https://github.com/ceydaulubas"><img src={GithubLogo} /></a>
+              </li>
 
-// }
+              <li className="list">
+                <a href="https://www.linkedin.com/in/ceydaulubas/"><img src={LinkedinLogo}/></a>
+              </li>
 
-// export default Footer;
+              <li className="list">
+                <a href="mailto:ceyda.ulubas@hotmail.com"><img src={MailLogo}/> </a>
+              </li>
+
+              <li className="list">
+                <a href="https://ceydaulubas.medium.com/"><img src={MediumLogo}/> </a>
+              </li>
+            </ul>
+  </div>
+);
+
+export default Footer;

@@ -1,6 +1,7 @@
 body {
   font-family: 'PT Sans', sans-serif;
   padding: 2rem;
+  
 }
 button {
   border: none;
@@ -22,9 +23,13 @@ button {
 .comment-box {
   max-width: 37.5rem;
   color: #fff;
-  background-color: #909090;
+  background-color:rgba(80, 7, 37, 0.39);
   border-radius: 0.875rem;
   padding: 0.2rem 1rem 2rem;
+  margin-top:5%;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
 }
 .comment-form {
   background-color: #fff;
@@ -42,7 +47,7 @@ button {
     width: 99%;
     
     &:focus {
-      border-bottom-color: #00BDFC;
+      border-bottom-color: #410a23;
       outline: none;
     }
   }
@@ -58,11 +63,11 @@ button {
 }
 #comment-reveal {
   float: right;
-  background-color: #00BDFC;
+  background-color:#410a23;
   color: #fff;
 }
 .comment {
-  border-top: 0.125rem solid #404040;
+  border-top: 0.125rem solid #47042d;
 }
 .comment-body {
   font-style: italic;
@@ -77,7 +82,7 @@ button {
   text-decoration: none;
   
   &:hover {
-    color: #00BDFC;
+    color: #500433;
     font-weight: bold;
   }
 }
