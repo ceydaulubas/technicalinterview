@@ -26,15 +26,15 @@ class CommentBox extends React.Component {
       
       return(
         <div className="comment-box" style ={{   marginBottom: '5%' }}>
-          <h2  style={{ textAlign:'center'}}>Write Your Comments</h2>
+          <h3  style={{ textAlign:'center'}}>Write Your Comments</h3>
           <CommentForm addComment={this._addComment.bind(this)}/>
           <button id="comment-reveal" onClick={this._handleClick.bind(this)}>
             {buttonText}
           </button>
-          <h3>Comments</h3>
-          <h4 className="comment-count">
+          <h4>Comments</h4>
+          <h5 className="comment-count">
             {this._getCommentsTitle(comments.length)}
-          </h4>
+          </h5>
           {commentNodes}
         </div>  
       );

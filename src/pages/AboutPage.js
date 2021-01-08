@@ -37,7 +37,7 @@ const About = () => {
           During 9 super intensive teaching weeks, I learned deeply information about full-stack development and created
             <Link to="/projects" ><buton> 3 different projects. 🎉</buton></Link>
         </p>
-        <p style={{ marginLeft: "5%" }}>
+        <p >
           During and after the Bootcamp, I realized that I was a person who struggles with difficulties for myself,
           who does not give up, and can learn easily. For this reason,
           I believe that I will step into good jobs thanks to my researches and my good communication within the group on this new road I started.
