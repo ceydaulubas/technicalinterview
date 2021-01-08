@@ -1,8 +1,8 @@
 import React from "react";
 
 import "../assets/style/AboutPage.scss";
-import Me from "../assets/images/me2.jpg"
-import Pic from "../assets/images/pic2.jpg"
+import Me from "../assets/images/me.jpg"
+import Pic from "../assets/images/pic.jpg"
 import { Link } from "react-router-dom";
 
 const About = () => {
